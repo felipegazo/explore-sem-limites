@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #312D64;
+    --color-rose: #B52184;
+    --color-white: #FFFFFF;
+    --color-ice: #F9F4FB;
+    --color-blue-gradient: linear-gradient(to right, #343193, #302C63);
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: "Mulish", sans-serif;
+    background: var(--color-ice);
+}
+
+h1 {
+    line-height: auto;
+    color: var(--color-rose);
+    text-transform: bold;
+    font-weight: 800;
+    font-size: 2rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 41.9rem;
+    background-color: var(--color-ice);
+    width: 100%;
+}
+main img {
+    margin-bottom: 1.06rem;
+}
+
+main p {
+    font-size: 1.25rem;
+    line-height: auto;
+    margin-bottom: 2.19rem;
+    margin-top: 0.3rem;
+    color: var(--color-blue);
+}
+
+section {
+    background-image: var(--color-blue-gradient);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.12rem;
+}
+
+section .card {
+    border-radius: 1.25rem;
+    background-color: var(--color-white);
+    width: 22.5rem;
+    min-height: 22.37rem;
+    padding: 1.65rem;
+    margin-top: 3.12rem;
+}
+
+section h2 {
+    color: var(--color-rose);
+    font-size: 1.9rem;
+    line-height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    font-weight: 800;
+}
+
+section p {
+    color: var(--color-blue);
+    font-size: 1.25rem;
+}
+
+fieldset {
+    padding-top: 4.87rem;
+    padding-bottom: 4.87rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    border: 0;
+    background: var(--color-ice);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    padding: 4.37rem 5.8rem;
+    background: var(--color-ice);
+    min-width: 21.87rem;
+    gap: 1.5rem;
+}
+
+form label {
+    display: none;
+}
+
+form img {
+    position: absolute;
+}
+
+form input {
+    height: 3rem;
+    border-radius: 1rem;
+    width: 21.87rem;
+    font-family: "Mulish", sans-serif;
+    color: var(--color-blue);
+    border: 1px solid #312D64;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    top: 0px;
+}
+
+.person img, .arroba img {
+    margin: 0.7rem;
+}
+
+.person input, .arroba input {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+
+#textarea {
+    height: 7.87rem;
+}
+
+form button {
+    background: var(--color-blue-gradient);
+    color: var(--color-white);
+    font-size: 0.87rem;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    border: none;
+    font-family: "Mulish", sans-serif;
+}
+
+footer {
+    background: var(--color-blue-gradient);
+    color: var(--color-white);
+    width: 100%;
+    height: 4.87rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25;
+}
+
+@media (min-width: 700px) {
+
+    main {
+        display: grid;
+        grid-template-areas: 
+        "A B"
+        "C B";
+        align-items: start;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .astronaut {
+        grid-area: B;
+        width: 35rem;
+    }
+
+    .header {
+        grid-area: A;
+        margin-top: 15.5rem;
+        margin-left: 4rem;
+    }
+
+    .seta {
+        grid-area: C;
+        margin-bottom: 0px;
+        margin-left: 5rem;
+    }
+
+    .header h1 {
+        font-size: 3.3rem;
+    }
+
+    .header p {
+        font-size: 1.7rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    section .card {
+        min-height: 28.12rem;
+    }
+
+    fieldset {
+        background-image: url(/assets/bg.png);
+        width: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        background: none;
+        margin-left: 0;
+
+    }
+
+    form input {
+        min-width: 35rem;
+    }
+
+
+}
